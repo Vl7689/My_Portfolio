@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishal Luthra — Computer Science</title>
+  <meta name="description" content="Vishal Luthra — CS Student at Georgia Tech, Data Science Researcher, AI Developer">
+  <meta property="og:title" content="Vishal Luthra — Computer Science">
+  <meta property="og:description" content="CS Student at Georgia Tech | 4.0 GPA | Data Science & AI Research">
+  <meta property="og:type" content="website">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-initials">VL</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+    <div class="loader-label">Loading</div>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- NAV -->
+  <header class="site-header" id="site-header">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">VL</a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/files/resume.pdf" target="_blank" class="nav-resume">Resume</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-inner">
+      <div class="hero-meta">
+        <span class="hero-tag">Georgia Institute of Technology</span>
+        <span class="hero-tag">Atlanta, GA</span>
+      </div>
+      <h1 class="hero-name">Vishal<br>Luthra</h1>
+      <div class="hero-role">
+        <span class="role-prefix">—</span>
+        <span id="typing-text"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-desc">Computer Science student building intelligent systems at the intersection of data science, AI research, and software engineering.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View Work</a>
+        <a href="#contact" class="btn-secondary">Get in Touch</a>
+        <a href="assets/files/resume.pdf" target="_blank" class="btn-secondary">Download Resume</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-inner">
+      <div class="about-left" data-aos="fade-right">
+        <div class="section-label">01 / About</div>
+        <h2 class="section-heading">Building things<br>that matter.</h2>
+        <p>I'm a Computer Science freshman at Georgia Institute of Technology maintaining a 4.0 GPA. My work spans data analytics, AI persona development, and multimodal transportation systems — always with a focus on real-world impact.</p>
+        <p>Originally from New Berlin, Wisconsin, I bring a methodical, research-driven approach to every project I take on.</p>
+        <div class="about-certs">
+          <div class="cert-item">CompTIA A+</div>
+          <div class="cert-item">CompTIA Net+</div>
+          <div class="cert-item">Meta Front-End Developer</div>
+        </div>
+      </div>
+      <div class="about-right" data-aos="fade-left">
+        <div class="about-avatar">
+          <div class="avatar-frame">
+            <div class="avatar-initials">VL</div>
+            <div class="avatar-ring ring-a"></div>
+            <div class="avatar-ring ring-b"></div>
+            <div class="avatar-scan"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-val" data-target="4.0" data-suffix="">0.0</span>
+              <span class="stat-key">GPA</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-val" data-target="6" data-suffix="+">0+</span>
+              <span class="stat-key">Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-val" data-target="3" data-suffix="">0</span>
+              <span class="stat-key">Research Roles</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="section-inner">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label">02 / Skills</div>
+        <h2 class="section-heading">Technical Expertise</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-num">01</div>
+          <h3>Data Science</h3>
+          <p>Python, R, statistical analysis, data visualization, and machine learning applied to real-world datasets.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="90"></div></div>
+          </div>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="skill-num">02</div>
+          <h3>Software Development</h3>
+          <p>Java, Python, JavaScript, and front-end development. Building functional tools from specification to deployment.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="82"></div></div>
+          </div>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-num">03</div>
+          <h3>AI &amp; Research</h3>
+          <p>AI persona development, behavioral pattern analysis, incentive modeling, and transportation systems research.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="76"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience" id="experience">
+    <div class="section-inner">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label">03 / Experience</div>
+        <h2 class="section-heading">Research &amp;<br>Consulting Work</h2>
+      </div>
+      <div class="exp-list">
+        <div class="exp-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="exp-left">
+            <div class="exp-date">Jan 2026 — Present</div>
+            <div class="exp-org">Data Science @ GT</div>
+          </div>
+          <div class="exp-right">
+            <h3>RoboInvesting Team Lead</h3>
+            <p>Leading the AI-Persona Team focused on simulating stock market movement. Analyzing behavioral patterns of value investor Mohnish Pabrai to develop data-driven AI personas and system responses.</p>
+            <div class="exp-tags"><span>AI</span><span>Python</span><span>Behavioral Analysis</span></div>
+          </div>
+        </div>
+        <div class="exp-item" data-aos="fade-up" data-aos-delay="150">
+          <div class="exp-left">
+            <div class="exp-date">Jan 2026 — Present</div>
+            <div class="exp-org">Georgia Tech</div>
+          </div>
+          <div class="exp-right">
+            <h3>ACT Car Simulator — Student Researcher</h3>
+            <p>Designing personalized incentive recommendation systems to shift personal vehicle users toward sustainable transportation modes. Incorporating dynamic elements such as weather and traffic into data models.</p>
+            <div class="exp-tags"><span>Data Modeling</span><span>Research</span><span>Analytics</span></div>
+          </div>
+        </div>
+        <div class="exp-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="exp-left">
+            <div class="exp-date">Dec 2025 — Present</div>
+            <div class="exp-org">TCG</div>
+          </div>
+          <div class="exp-right">
+            <h3>Technology Consulting Group — Client Consultant</h3>
+            <p>Contributing to website development and UI/UX improvements. Collaborating with team members to deliver measurable outcomes across a range of client engagements.</p>
+            <div class="exp-tags"><span>Consulting</span><span>UI/UX</span><span>Web Development</span></div>
+          </div>
+        </div>
+        <div class="exp-item" data-aos="fade-up" data-aos-delay="250">
+          <div class="exp-left">
+            <div class="exp-date">Aug 2024 — Mar 2025</div>
+            <div class="exp-org">LII</div>
+          </div>
+          <div class="exp-right">
+            <h3>Leadership Initiatives International — Data Analytics Intern</h3>
+            <p>Worked with public health experts on data-driven projects focused on health outcomes in Nigeria. Applied analytical methods to survey data to support impactful health strategies.</p>
+            <div class="exp-tags"><span>Data Analytics</span><span>Public Health</span><span>Research</span></div>
+          </div>
+        </div>
+        <div class="exp-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="exp-left">
+            <div class="exp-date">Jun 2024 — Jun 2025</div>
+            <div class="exp-org">Eddie's</div>
+          </div>
+          <div class="exp-right">
+            <h3>Eddie's Gaming Computers — Technology Technician Intern</h3>
+            <p>Gained hands-on experience in device maintenance and repair. Analyzed technical challenges across electronic devices and developed systematic approaches to troubleshooting.</p>
+            <div class="exp-tags"><span>Hardware</span><span>Troubleshooting</span><span>Technical Support</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS — HORIZONTAL SCROLL -->
+  <section class="projects" id="projects">
+    <div class="projects-header section-inner" data-aos="fade-up">
+      <div class="section-label">04 / Projects</div>
+      <h2 class="section-heading">Selected Work</h2>
+      <div class="projects-controls">
+        <button class="h-btn" id="h-prev">&#8592;</button>
+        <button class="h-btn" id="h-next">&#8594;</button>
+        <span class="projects-hint">Drag or auto-advances</span>
+      </div>
+    </div>
+    <div class="h-scroll-wrapper" id="h-scroll-section">
+      <div class="h-track" id="h-track">
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-num">01</span>
+            <span class="project-status">Completed</span>
+          </div>
+          <h3>Kettle Moraine School District Analysis</h3>
+          <p>Analyzed educational data across 10 schools spanning 2016–2024. Created line plots, bar charts, bubble charts, and heatmaps in R to identify trends in achievement, growth scores, and disability proportions.</p>
+          <div class="project-tech">
+            <span>R</span><span>Data Visualization</span><span>Statistical Analysis</span><span>Google Sheets</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-num">02</span>
+            <span class="project-status">In Use</span>
+          </div>
+          <h3>Kumon Student Attendance Tracking System</h3>
+          <p>Developed a barcode-scanning program in Google Sheets to check students in and out of class. Color-coded timers identify students needing support. Currently deployed at two Kumon centers.</p>
+          <div class="project-tech">
+            <span>Google Sheets</span><span>Automation</span><span>Barcode Scanning</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-num">03</span>
+            <span class="project-status">Active</span>
+          </div>
+          <h3>AI Stock Persona Simulation</h3>
+          <p>Leading development of AI personas to simulate stock market movement at Data Science @ GT. Analyzing behavioral patterns of value investor Mohnish Pabrai to build data-driven decision models.</p>
+          <div class="project-tech">
+            <span>Python</span><span>AI</span><span>Behavioral Analysis</span><span>Data Science</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-num">04</span>
+            <span class="project-status">Completed</span>
+          </div>
+          <h3>Nigeria Health Analytics</h3>
+          <p>Collaborated with public health experts to analyze regional health challenges and outcomes in Nigeria. Applied analytical methods to survey data to support data-driven health strategy development.</p>
+          <div class="project-tech">
+            <span>Data Analytics</span><span>Public Health</span><span>Research</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-num">05</span>
+            <span class="project-status">Active</span>
+          </div>
+          <h3>Multimodal Transport Incentive System</h3>
+          <p>Designing incentive recommendation systems for the ACT Car Simulator. Incorporating dynamic real-world factors including weather and traffic conditions for personalized user recommendations.</p>
+          <div class="project-tech">
+            <span>Data Modeling</span><span>Analytics</span><span>Research</span><span>Python</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-num">06</span>
+            <span class="project-status">Completed</span>
+          </div>
+          <h3>Custom PC Hardware Builds</h3>
+          <p>Designed and assembled custom PCs optimized for specific use cases including gaming and graphic design. Researched components, optimized configurations, and collaborated with peers to troubleshoot builds.</p>
+          <div class="project-tech">
+            <span>Hardware</span><span>PC Building</span><span>Troubleshooting</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <div class="contact-left" data-aos="fade-right">
+        <div class="section-label">05 / Contact</div>
+        <h2 class="section-heading">Let's Connect.</h2>
+        <p>I'm always open to new opportunities, research collaborations, and conversations. Whether you have a question or just want to say hello — my inbox is open.</p>
+        <div class="contact-links">
+          <a href="mailto:vluthra8@gatech.edu" class="contact-link">
+            <span class="contact-link-label">Email</span>
+            <span class="contact-link-val">vluthra8@gatech.edu</span>
+          </a>
+          <a href="https://www.linkedin.com/in/vishal-luthra-466b00281" target="_blank" class="contact-link">
+            <span class="contact-link-label">LinkedIn</span>
+            <span class="contact-link-val">vishal-luthra-466b00281</span>
+          </a>
+          <a href="tel:+12624447689" class="contact-link">
+            <span class="contact-link-label">Phone</span>
+            <span class="contact-link-val">(262) 444-7689</span>
+          </a>
+          <div class="contact-link">
+            <span class="contact-link-label">Location</span>
+            <span class="contact-link-val">Atlanta, GA 30332</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right" data-aos="fade-left">
+        <div class="contact-card">
+          <div class="contact-card-head">Send a Message</div>
+          <div class="contact-field">
+            <label>Name</label>
+            <input type="text" placeholder="Your name">
+          </div>
+          <div class="contact-field">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com">
+          </div>
+          <div class="contact-field">
+            <label>Message</label>
+            <textarea placeholder="What's on your mind?" rows="5"></textarea>
+          </div>
+          <button class="btn-primary contact-submit">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">VL</span>
+        <p>CS Freshman at Georgia Tech. Building intelligent systems through data science, AI research, and software engineering.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Vishal Luthra. All rights reserved.</span>
+      <span>Georgia Institute of Technology</span>
+    </div>
+  </footer>
+
+  <!-- Fixed LinkedIn -->
+  <div class="fixed-social">
+    <a href="https://www.linkedin.com/in/vishal-luthra-466b00281" target="_blank">in</a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
