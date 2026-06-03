@@ -848,6 +848,33 @@ input, textarea, button {
   border-color: rgba(200, 240, 255, 0.2);
 }
 
+.exp-bullets {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.exp-bullets li {
+  list-style: none;
+  font-size: 14px;
+  color: var(--grey);
+  line-height: 1.8;
+  font-weight: 300;
+  padding-left: 18px;
+  position: relative;
+}
+
+.exp-bullets li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
 /* =====================
    PROJECTS — HORIZONTAL SCROLL
 ===================== */
