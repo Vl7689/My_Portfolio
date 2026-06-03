@@ -982,6 +982,26 @@ input, textarea, button {
   flex: 1;
 }
 
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  transition: background var(--transition), color var(--transition), transform var(--transition);
+}
+
+.project-link:hover {
+  background: rgba(200, 240, 255, 0.08);
+  color: var(--white);
+  transform: translateY(-1px);
+}
+
 .project-tech {
   display: flex;
   flex-wrap: wrap;
